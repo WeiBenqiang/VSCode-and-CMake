@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alice/game/include/Gun.h
+iostream
+-
+
+/home/alice/game/include/Solider.h
+iostream
+-
+Gun.h
+/home/alice/game/include/Gun.h
+
+/home/alice/game/main.cpp
+include/Solider.h
+/home/alice/game/include/Solider.h
+include/Gun.h
+/home/alice/game/include/Gun.h
+
+/home/alice/game/src/Gun.cpp
+../include/Gun.h
+/home/alice/game/include/Gun.h
+
+/home/alice/game/src/Solider.cpp
+../include/Solider.h
+/home/alice/game/include/Solider.h
+
