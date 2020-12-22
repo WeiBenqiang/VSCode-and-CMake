@@ -11,7 +11,6 @@ void test()
 int main()
 {
     std::cout << "123123......" << std::endl;
-    std::cout << "123123......" << std::endl;
     
     test();
     return 0;
